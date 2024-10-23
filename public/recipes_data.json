@@ -1,0 +1,91 @@
+[
+    {
+        "recipe_id": 1,
+        "recipe_name": "Grilled Chicken with Basil",
+        "image": "https://i.ibb.co.com/zNtb5Qw/premium-photo-1673108852141-e8c3c22a4a22.jpg",
+        "short_description": "A flavorful dish with grilled chicken marinated in soy sauce and fresh basil leaves.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaf",
+            "400 g mushroom"
+        ],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+    },
+    {
+        "recipe_id": 2,
+        "recipe_name": "Vegan Tofu Stir-fry",
+        "image": "https://i.ibb.co.com/zNtb5Qw/premium-photo-1673108852141-e8c3c22a4a22.jpg",
+        "short_description": "A healthy vegan dish with tofu and a medley of fresh vegetables.",
+        "ingredients": [
+            "400 g tofu",
+            "200 g broccoli",
+            "150 g carrot",
+            "100 g bell peppers",
+            "50 ml soy sauce"
+        ],
+        "preparing_time": "25 min",
+        "calories": "250 calories"
+    },
+    {
+        "recipe_id": 3,
+        "recipe_name": "Pasta Carbonara",
+        "image": "https://i.ibb.co.com/zNtb5Qw/premium-photo-1673108852141-e8c3c22a4a22.jpg",
+        "short_description": "A classic Italian dish with creamy sauce, bacon, and cheese.",
+        "ingredients": [
+            "300 g pasta",
+            "100 g bacon",
+            "50 g Parmesan cheese",
+            "2 eggs",
+            "200 ml cream"
+        ],
+        "preparing_time": "20 min",
+        "calories": "500 calories"
+    },
+    {
+        "recipe_id": 4,
+        "recipe_name": "Avocado Salad",
+        "image": "https://i.ibb.co.com/zNtb5Qw/premium-photo-1673108852141-e8c3c22a4a22.jpg",
+        "short_description": "A refreshing salad with avocado, mixed greens, and a lemon vinaigrette.",
+        "ingredients": [
+            "2 avocados",
+            "100 g mixed greens",
+            "50 g cherry tomatoes",
+            "1 lemon",
+            "30 ml olive oil"
+        ],
+        "preparing_time": "10 min",
+        "calories": "180 calories"
+    },
+    {
+        "recipe_id": 5,
+        "recipe_name": "Beef Stew",
+        "image": "https://i.ibb.co.com/zNtb5Qw/premium-photo-1673108852141-e8c3c22a4a22.jpg",
+        "short_description": "A hearty and comforting stew with tender beef and root vegetables.",
+        "ingredients": [
+            "600 g beef",
+            "200 g potatoes",
+            "150 g carrots",
+            "100 g onions",
+            "500 ml beef stock"
+        ],
+        "preparing_time": "2 hours",
+        "calories": "600 calories"
+    },
+    {
+        "recipe_id": 6,
+        "recipe_name": "Chocolate Cake",
+        "image": "https://i.ibb.co.com/zNtb5Qw/premium-photo-1673108852141-e8c3c22a4a22.jpg",
+        "short_description": "A rich and moist chocolate cake topped with chocolate ganache.",
+        "ingredients": [
+            "200 g flour",
+            "150 g sugar",
+            "100 g cocoa powder",
+            "2 eggs",
+            "100 g butter"
+        ],
+        "preparing_time": "45 min",
+        "calories": "450 calories"
+    }
+]
