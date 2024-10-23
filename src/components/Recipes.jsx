@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react"
 import Recipe from './Recipe'
+import PropTypes from "prop-types";
 
-export default function Recipes() {
+export default function Recipes({addRecipeToQueue}) {
   
     const [recieps, setRecipes] = useState([]);
     useEffect(()=>{
@@ -11,10 +12,17 @@ export default function Recipes() {
         .then(data => setRecipes(data))   
     },[])
     return (
-    <div className="w-2/3 grid md:grid-cols-2 max-sm: grid-cols-1 gap-6 mt-5">
+    <div className="w-2/3 grid md:grid-cols-2 max-sm: grid-cols-1 gap-6 mt-5 max-sm:w-full">
         {
-            recieps.map((recipe, idx) => <Recipe key={idx} recipe ={recipe}></Recipe>)
+            recieps.map((recipe) => <Recipe key={recipe.recipe_id} recipe ={recipe}
+            addRecipeToQueue={addRecipeToQueue}
+            ></Recipe>)
         }
     </div>
   )
 }
+
+
+Recipes.propTypes = {
+    addRecipeToQueue: PropTypes.func,
+  };

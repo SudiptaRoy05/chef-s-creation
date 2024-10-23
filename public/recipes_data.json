@@ -10,8 +10,8 @@
             "200 g basil leaf",
             "400 g mushroom"
         ],
-        "preparing_time": "30 min",
-        "calories": "320 calories"
+        "preparing_time": "30",
+        "calories": "320"
     },
     {
         "recipe_id": 2,
@@ -25,8 +25,8 @@
             "100 g bell peppers",
             "50 ml soy sauce"
         ],
-        "preparing_time": "25 min",
-        "calories": "250 calories"
+        "preparing_time": "25",
+        "calories": "250"
     },
     {
         "recipe_id": 3,
@@ -40,8 +40,8 @@
             "2 eggs",
             "200 ml cream"
         ],
-        "preparing_time": "20 min",
-        "calories": "500 calories"
+        "preparing_time": "20",
+        "calories": "500"
     },
     {
         "recipe_id": 4,
@@ -55,8 +55,8 @@
             "1 lemon",
             "30 ml olive oil"
         ],
-        "preparing_time": "10 min",
-        "calories": "180 calories"
+        "preparing_time": "10",
+        "calories": "180 "
     },
     {
         "recipe_id": 5,
@@ -70,8 +70,8 @@
             "100 g onions",
             "500 ml beef stock"
         ],
-        "preparing_time": "2 hours",
-        "calories": "600 calories"
+        "preparing_time": "50",
+        "calories": "600"
     },
     {
         "recipe_id": 6,
@@ -85,7 +85,7 @@
             "2 eggs",
             "100 g butter"
         ],
-        "preparing_time": "45 min",
-        "calories": "450 calories"
+        "preparing_time": "45",
+        "calories": "450"
     }
 ]

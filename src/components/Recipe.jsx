@@ -3,11 +3,11 @@ import { IoTimeOutline } from "react-icons/io5";
 import { AiOutlineFire } from "react-icons/ai";
 
 
-export default function Recipe({ recipe }) {
+export default function Recipe({ recipe, addRecipeToQueue}) {
   const { recipe_name, image, short_description, preparing_time, ingredients,calories } =
     recipe;
   return (
-    <div className="card card-compact bg-base-100 shadow-xl border p-2">
+    <div className="card card-compact border p-2">
       <figure>
         <img src={image} alt={`food ${recipe_name}`} />
       </figure>
@@ -24,17 +24,17 @@ export default function Recipe({ recipe }) {
             ))}
           </ul>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center">
           <p className="flex items-center gap-1">
             <span className="text-xl">
               <IoTimeOutline />
             </span>
-            {preparing_time}
+            {preparing_time} min
           </p>
-          <p className="flex items-center gap-1"><span className="text-xl"><AiOutlineFire /></span>{calories}</p>
+          <p className="flex items-center gap-1 justify-end"><span className="text-xl"><AiOutlineFire /></span>{calories} calories</p>
         </div>
-        <div className="card-actions justify-end">
-          <button className="border px-4 py-2 rounded-lg bg-purple-400 text-white">Buy Now</button>
+        <div className="card-actions">
+          <button onClick={()=>addRecipeToQueue(recipe)} className="border px-8 rounded-full bg-green-400 font-semibold btn">Want to Cook</button>
         </div>
       </div>
     </div>
@@ -43,4 +43,5 @@ export default function Recipe({ recipe }) {
 
 Recipe.propTypes = {
   recipe: PropTypes.object.isRequired,
+  addRecipeToQueue: PropTypes.func.isRequired
 };
