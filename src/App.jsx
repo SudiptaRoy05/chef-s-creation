@@ -7,6 +7,13 @@ import Sidebar from "./components/Sidebar"
 
 function App() {
   const [recipeQueue, setRecipeQueue] = useState([]);
+
+  const [perpareRecipe, SetperpareRecipe] = useState([])
+  const [times, setTime] = useState(0)
+  const [calories, setCalories] = useState(0)
+
+
+
   const addRecipeToQueue =(recipe)=>{
     const isExist = recipeQueue.find(previousRecipe =>previousRecipe.recipe_id === recipe.recipe_id);
     if(!isExist){
@@ -14,9 +21,22 @@ function App() {
     }else{
       alert('Recipe already exist in the queue')
     }
-   
   }
-  // console.log(recipeQueue);
+
+
+  const handlePreparebtn=(id)=>{
+    console.log(id);
+    const deletedRecipe = recipeQueue.find( recipe => recipe.recipe_id === id)
+    const updateQueue = recipeQueue.filter(recipe=> recipe.recipe_id !== id)
+    setRecipeQueue(updateQueue);
+    SetperpareRecipe([...perpareRecipe, deletedRecipe])
+  }
+
+  const calcuateTimeAndCalories=(time, calo)=>{
+      setTime(times + Number(time));
+      setCalories(calories + Number(calo));
+  }
+  
   return (
     <>
       <Header></Header>
@@ -26,7 +46,11 @@ function App() {
         {/* card section  */}
        <Recipes addRecipeToQueue={addRecipeToQueue}></Recipes>
         {/* sidebar  */}
-        <Sidebar recipeQueue={recipeQueue}></Sidebar>
+        <Sidebar
+        times={times}
+        calories={calories}
+        calcuateTimeAndCalories={calcuateTimeAndCalories}
+        perpareRecipe={perpareRecipe} handlePreparebtn={handlePreparebtn} recipeQueue={recipeQueue}></Sidebar>
       </section>
      
     </>
