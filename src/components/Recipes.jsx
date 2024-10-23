@@ -7,7 +7,7 @@ export default function Recipes({addRecipeToQueue}) {
   
     const [recieps, setRecipes] = useState([]);
     useEffect(()=>{
-        fetch('../../public/recipes_data.json')
+        fetch('recipes_data.json')
         .then(res => res.json())
         .then(data => setRecipes(data))   
     },[])
